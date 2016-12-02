@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hello World! - Canvas</title>
+  </head>
+  <body>
+  <style>
+    body {
+      background-image: url("http://i.imgur.com/9mrztiO.jpg");
+  </style>
+  <script>
+    var canvas = document.querySelector("canvas");
+    canvas.width = 1000;
+    canvas.height = 300;
+    var ctx = canvas.getContext("2D");
+    ctx.font = "100px Comic Sans MS";
+    ctx.fillStyle = "blue";
+    ctx.fillText("You Can't Stump the Trump",200,40);
+  </script>
+    <br><canvas></canvas>
+    <p>You can't</P>
+  </body>
+</html>
