@@ -7,14 +7,21 @@
   <style>
     body {
       background-image: url("http://i.imgur.com/9mrztiO.jpg");
+      background-repeat: no-repeat;
+      color: red;
+      text-align: center;
+    }
+    p {
+      font-size: 60px;
+    }
   </style>
   <script>
     var canvas = document.querySelector("canvas");
     canvas.width = 1000;
     canvas.height = 300;
     var ctx = canvas.getContext("2D");
-    ctx.font = "100px Comic Sans MS";
-    ctx.fillStyle = "blue";
+    ctx.font = "100px Arial";
+    ctx.fillStyle = "red";
     ctx.fillText("You Can't Stump the Trump",200,40);
   </script>
     <br><canvas></canvas>
