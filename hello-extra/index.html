@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BORK</title>
+  </head>
+  <body>
+  <style>
+    body {
+      background: Black;
+      font-family: Comic Sans MS;
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <img src="https://i.ytimg.com/vi/AQ1OhYonsg0/maxresdefault.jpg">
+  <canvas></canvas>
+  <script>
+    var canvas = document.querySelector("canvas");
+    canvas.width = 2000;
+    canvas.height = 300;
+    var ctx = canvas.getContext("2d");
+    ctx.font = "100px Comic Sans MS";
+
+    function drawRainbow(text,x,y) {
+      var colors = ["red","orange","yellow","green","blue","indigo","violet"];
+      for (var i = 0;i < colors.length; i++){
+        ctx.fillStyle = colors[i];
+        ctx.fillText(text,x + i*3,y + i*3);
+      }
+    }
+    drawRainbow("bork",300,80);
+  </script>
+  <p>gabe</p>
+  </body>
+</html>
