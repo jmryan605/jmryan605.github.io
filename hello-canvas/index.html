@@ -7,7 +7,6 @@
   <style>
     body {
       background-image: url("http://i.imgur.com/9mrztiO.jpg");
-      background-repeat: no-repeat;
       color: red;
       text-align: center;
     }
@@ -15,16 +14,17 @@
       font-size: 60px;
     }
   </style>
+    <canvas></canvas>
   <script>
     var canvas = document.querySelector("canvas");
-    canvas.width = 1000;
+    canvas.width = 2000;
     canvas.height = 300;
-    var ctx = canvas.getContext("2D");
+    var ctx = canvas.getContext("2d");
     ctx.font = "100px Arial";
     ctx.fillStyle = "red";
-    ctx.fillText("You Can't Stump the Trump",200,40);
+    ctx.fillText("You Can't Stump the Trump",300,80);
   </script>
-    <br><canvas></canvas>
+  <br>
     <p>You can't</P>
   </body>
 </html>
