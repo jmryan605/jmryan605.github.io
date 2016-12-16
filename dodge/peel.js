@@ -11,7 +11,7 @@ class Boot {
 class Load {
   preload() {
     console.log("Loading...")
-    this.load.image("bg","i.redditmedia.com/za_nd0gAOq-itIhkErh1Mjg035TLBXgKg65J__p_TE4.jpg?w=320&s=7848fcb7d967f3a9c217a1402042a983")
+    this.load.image("bg","http://www.dostavka.md/img/1050101.jpg")
   }
   create(){
     console.log("Loaded. Aren't you so proud Ben?")
