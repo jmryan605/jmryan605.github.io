@@ -1,4 +1,4 @@
-class Boot = {
+class Boot {
   preload() {
    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
    this.scale.pageAlignHorizontally = true;
