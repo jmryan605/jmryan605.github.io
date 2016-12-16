@@ -21,15 +21,31 @@
     canvas.height = 300;
     var ctx = canvas.getContext("2d");
     ctx.font = "100px Comic Sans MS";
-
+    var p = 3
     function drawRainbow(text,x,y) {
       var colors = ["red","orange","yellow","green","blue","indigo","violet"];
       for (var i = 0;i < colors.length; i++){
         ctx.fillStyle = colors[i];
-        ctx.fillText(text,x + i*3,y + i*3);
+        if (p = 3) {
+          p = 8;
+        } else if (p = 8){
+          p = 3;
+        }
+        setTimeout(drawRainbow, 1000);
+        ctx.fillText(text,x + i*p,y + i*3);
       }
     }
     drawRainbow("bork",900,80);
+    move()
+
+    function move() {
+      var p = 3;
+      setTimeout(move1, 1000);
+    }
+    function move1() {
+      var p = 8;
+      setTimeout(move, 1000);
+    }
   </script>
   <p>gabe</p>
   </body>
