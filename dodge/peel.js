@@ -4,8 +4,19 @@ class Boot {
    this.scale.pageAlignHorizontally = true;
    this.scale.pageAlignVertically = true;
   }
+  create(){
+    this.state.start("Load")
+  }
+}
+class Load {
+  preload() {
+    console.log("Loading...")
+  }
+  create(){
+    console.log("Loaded. Aren't you so proud Ben?")
 }
 
 var game = new Phaser.Game(320,568);
 game.state.add("Boot",Boot)
+game.staqte.add("Load",Load)
 game.state.start("Boot")
