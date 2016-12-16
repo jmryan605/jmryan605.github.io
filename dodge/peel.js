@@ -14,8 +14,8 @@ class Load {
   }
   create(){
     console.log("Loaded. Aren't you so proud Ben?")
+  }
 }
-
 var game = new Phaser.Game(320,568);
 game.state.add("Boot",Boot)
 game.staqte.add("Load",Load)
