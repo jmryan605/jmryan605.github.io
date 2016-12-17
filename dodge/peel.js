@@ -5,24 +5,26 @@ class Boot {
    this.scale.pageAlignVertically = true;
   }
   create(){
-    this.state.start("Load")
+    this.state.start("Load");
   }
 }
 
 class Load {
   preload() {
-    console.log("Loading...")
-    this.load.image("bg","assets/placeholder.jpg")
+    console.log("Loading...");
+    this.load.image("bg","assets/placeholder.jpg");
   }
   create(){
-    console.log("Loaded. Aren't you so proud Ben?")
-    this.state.start("Play")
+    console.log("Loaded. Aren't you so proud Ben?");
+    this.state.start("Play");
   }
 }
 
 class Play {
   create() {
-    console.log("Entered Play! :D")
+    console.log("Entered Play! :D");
+    this.background = this.add.tileSprite(0,0,320,568,"bg");
+    this.background.autoScroll(0,700);
   }
 }
 
