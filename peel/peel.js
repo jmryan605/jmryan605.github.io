@@ -12,7 +12,7 @@ class Boot {
 class Load {
   preload() {
     console.log("Loading...");
-    this.load.image("bg","assets/placeholder.jpg");
+    this.load.image("bg","assets/bg.png");
   }
   create(){
     console.log("Loaded. Aren't you so proud Ben?");
