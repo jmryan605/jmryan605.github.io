@@ -1,0 +1,22 @@
+<!doctype html>
+  <html>
+    <head>
+      <title>zayen</title>
+    </head>
+    <body>
+      <style>
+        body {
+          background: #ffffff;
+          font-family: Courier New;
+          color: #000000;
+          font-size: 15px;
+          text-align: center;
+        }
+        p {
+          margin-top: 275px;
+        }
+      </style>
+      <p>zayen</p>
+      <img src="https://woodlandfoods.com/img/WF_Images/B04-giant-peruvian-lima-main.jpg" alt="bean" style="width: 12.5%; height: 12.5%;">
+    </body>  
+  </html>
